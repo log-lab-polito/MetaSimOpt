@@ -1,0 +1,43 @@
+[project]
+name = "metasimopt"
+version = "0.1.0"
+description = "Metamodel-based simulation optimisation framework"
+authors = [{ name = "and-ferrari", email = "ferrari.ndr1@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+
+dependencies = [
+    "matplotlib==3.10.3",
+    "numpy<2",
+    "pandas==2.2.3",
+    "scikit-learn==1.6.1",
+    "scipy==1.15.3",
+    "openpyxl>=3.1.5",
+    "optuna>=4.3.0",
+    "pathos>=0.3.4",
+    "joblib>=1.5.1",
+    "seaborn>=0.13.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+# Configurazioni extra di Poetry
+[tool.poetry]
+packages = [{ include = "MetaSimOpt" }]
+
+[tool.poetry.dependencies]
+torch = { version = "^2.3.0", source = "torch-cuda" }
+torchvision = { version = "^0.18.0", source = "torch-cuda" }
+torchaudio = { version = "^2.2.0", source = "torch-cuda" }
+
+[[tool.poetry.source]]
+name = "torch-cuda"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
