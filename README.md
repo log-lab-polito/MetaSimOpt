@@ -48,8 +48,12 @@ MetaSimOpt/
 The example refers to the content of the following two papers:
 
 **Metamodel-Based Order Picking for Automated Storage and Retrieval Systems**  
-Andrea Ferrari, Canan Gunes Corlu  
+Ferrari Andrea, Corlu Canan Gunes  
 *2024 Winter Simulation Conference (WSC), IEEE, pp. 1457–1468*
+
+**Order sequencing in automated storage and retrieval systems: A neural network-assisted simulation-optimisation approach**  
+Ferrari Andrea, Corlu Canan Gunes, Mangano Giulio  
+*Computers \& Industrial Engineering, 111537*
 
 The second paper extend the capabilities of the metamodel adding context features and use the neural networks in combination with advanced optimization algorithms to solve the order sequencing problem.
 
@@ -63,6 +67,16 @@ If you use **MetaSimOpt** in your research or you find this work interesting, pl
   pages={1457--1468},
   year={2024},
   organization={IEEE}
+}
+```
+```bibtex
+@article{ferrari2025order,
+  title={Order sequencing in automated storage and retrieval systems: A neural network-assisted simulation-optimisation approach},
+  author={Ferrari, Andrea and Corlu, Canan Gunes and Mangano, Giulio},
+  journal={Computers \& Industrial Engineering},
+  pages={111537},
+  year={2025},
+  publisher={Elsevier}
 }
 ```
 
